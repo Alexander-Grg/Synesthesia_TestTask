@@ -11,7 +11,7 @@ import SwiftUI
 struct Synesthesia_TestTaskApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SearchShowsView()
         }
     }
 }

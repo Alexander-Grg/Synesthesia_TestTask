@@ -8,17 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		622099772913A61D00AE72AB /* Synesthesia_TestTaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622099762913A61D00AE72AB /* Synesthesia_TestTaskApp.swift */; };
-		622099792913A61D00AE72AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622099782913A61D00AE72AB /* ContentView.swift */; };
 		6220997B2913A61E00AE72AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6220997A2913A61E00AE72AB /* Assets.xcassets */; };
 		6220997E2913A61E00AE72AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6220997D2913A61E00AE72AB /* Preview Assets.xcassets */; };
+		6220998D2913AB7B00AE72AB /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220998C2913AB7B00AE72AB /* APIError.swift */; };
+		6220998F2913AB8700AE72AB /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220998E2913AB8700AE72AB /* APIProvider.swift */; };
+		622099912913ABD700AE72AB /* EndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622099902913ABD700AE72AB /* EndpointProtocol.swift */; };
+		622099952913AEA800AE72AB /* SearchShowsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622099942913AEA800AE72AB /* SearchShowsEndpoint.swift */; };
+		622099972913AFF100AE72AB /* TVshow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622099962913AFF100AE72AB /* TVshow.swift */; };
+		622099992913B1F700AE72AB /* SearchShowsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622099982913B1F700AE72AB /* SearchShowsProtocol.swift */; };
+		6220999C2913B2A000AE72AB /* SearchShowsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220999B2913B2A000AE72AB /* SearchShowsViewModel.swift */; };
+		6220999E2913B2AE00AE72AB /* SearchShowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220999D2913B2AE00AE72AB /* SearchShowsView.swift */; };
+		622099A32913B2F900AE72AB /* SearchShowsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622099A22913B2F900AE72AB /* SearchShowsCell.swift */; };
+		622099A62913B4C700AE72AB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 622099A52913B4C700AE72AB /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		622099732913A61D00AE72AB /* Synesthesia_TestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Synesthesia_TestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		622099762913A61D00AE72AB /* Synesthesia_TestTaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Synesthesia_TestTaskApp.swift; sourceTree = "<group>"; };
-		622099782913A61D00AE72AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6220997A2913A61E00AE72AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6220997D2913A61E00AE72AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6220998C2913AB7B00AE72AB /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		6220998E2913AB8700AE72AB /* APIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
+		622099902913ABD700AE72AB /* EndpointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointProtocol.swift; sourceTree = "<group>"; };
+		622099942913AEA800AE72AB /* SearchShowsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchShowsEndpoint.swift; sourceTree = "<group>"; };
+		622099962913AFF100AE72AB /* TVshow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVshow.swift; sourceTree = "<group>"; };
+		622099982913B1F700AE72AB /* SearchShowsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchShowsProtocol.swift; sourceTree = "<group>"; };
+		6220999B2913B2A000AE72AB /* SearchShowsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchShowsViewModel.swift; sourceTree = "<group>"; };
+		6220999D2913B2AE00AE72AB /* SearchShowsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchShowsView.swift; sourceTree = "<group>"; };
+		622099A22913B2F900AE72AB /* SearchShowsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchShowsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				622099A62913B4C700AE72AB /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +69,8 @@
 		622099752913A61D00AE72AB /* Synesthesia_TestTask */ = {
 			isa = PBXGroup;
 			children = (
-				622099762913A61D00AE72AB /* Synesthesia_TestTaskApp.swift */,
-				622099782913A61D00AE72AB /* ContentView.swift */,
-				6220997A2913A61E00AE72AB /* Assets.xcassets */,
-				6220997C2913A61E00AE72AB /* Preview Content */,
+				622099842913AA6F00AE72AB /* App */,
+				622099882913AACA00AE72AB /* Resources */,
 			);
 			path = Synesthesia_TestTask;
 			sourceTree = "<group>";
@@ -65,6 +81,112 @@
 				6220997D2913A61E00AE72AB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		622099842913AA6F00AE72AB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				622099762913A61D00AE72AB /* Synesthesia_TestTaskApp.swift */,
+				622099872913AA8700AE72AB /* Model */,
+				622099862913AA7C00AE72AB /* Flows */,
+				622099852913AA7500AE72AB /* Business logic */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		622099852913AA7500AE72AB /* Business logic */ = {
+			isa = PBXGroup;
+			children = (
+				622099892913AB2600AE72AB /* Network */,
+			);
+			path = "Business logic";
+			sourceTree = "<group>";
+		};
+		622099862913AA7C00AE72AB /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				6220999A2913B29100AE72AB /* SearchShows */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		622099872913AA8700AE72AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				622099962913AFF100AE72AB /* TVshow.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		622099882913AACA00AE72AB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6220997A2913A61E00AE72AB /* Assets.xcassets */,
+				6220997C2913A61E00AE72AB /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		622099892913AB2600AE72AB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6220998E2913AB8700AE72AB /* APIProvider.swift */,
+				6220998C2913AB7B00AE72AB /* APIError.swift */,
+				622099902913ABD700AE72AB /* EndpointProtocol.swift */,
+				6220998B2913AB3300AE72AB /* Services */,
+				6220998A2913AB2C00AE72AB /* Endpoints */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		6220998A2913AB2C00AE72AB /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				622099942913AEA800AE72AB /* SearchShowsEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		6220998B2913AB3300AE72AB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				622099982913B1F700AE72AB /* SearchShowsProtocol.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6220999A2913B29100AE72AB /* SearchShows */ = {
+			isa = PBXGroup;
+			children = (
+				622099A12913B2DC00AE72AB /* Cell */,
+				622099A02913B2D300AE72AB /* View */,
+				6220999F2913B2CC00AE72AB /* ViewModel */,
+			);
+			path = SearchShows;
+			sourceTree = "<group>";
+		};
+		6220999F2913B2CC00AE72AB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6220999B2913B2A000AE72AB /* SearchShowsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		622099A02913B2D300AE72AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6220999D2913B2AE00AE72AB /* SearchShowsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		622099A12913B2DC00AE72AB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				622099A22913B2F900AE72AB /* SearchShowsCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +205,9 @@
 			dependencies = (
 			);
 			name = Synesthesia_TestTask;
+			packageProductDependencies = (
+				622099A52913B4C700AE72AB /* Kingfisher */,
+			);
 			productName = Synesthesia_TestTask;
 			productReference = 622099732913A61D00AE72AB /* Synesthesia_TestTask.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +236,9 @@
 				Base,
 			);
 			mainGroup = 6220996A2913A61D00AE72AB;
+			packageReferences = (
+				622099A42913B4C700AE72AB /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 622099742913A61D00AE72AB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +265,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				622099792913A61D00AE72AB /* ContentView.swift in Sources */,
+				6220999C2913B2A000AE72AB /* SearchShowsViewModel.swift in Sources */,
+				622099992913B1F700AE72AB /* SearchShowsProtocol.swift in Sources */,
+				622099A32913B2F900AE72AB /* SearchShowsCell.swift in Sources */,
+				6220999E2913B2AE00AE72AB /* SearchShowsView.swift in Sources */,
+				6220998F2913AB8700AE72AB /* APIProvider.swift in Sources */,
+				622099972913AFF100AE72AB /* TVshow.swift in Sources */,
+				622099912913ABD700AE72AB /* EndpointProtocol.swift in Sources */,
+				622099952913AEA800AE72AB /* SearchShowsEndpoint.swift in Sources */,
 				622099772913A61D00AE72AB /* Synesthesia_TestTaskApp.swift in Sources */,
+				6220998D2913AB7B00AE72AB /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +402,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Synesthesia_TestTask/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Synesthesia_TestTask/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -294,7 +430,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Synesthesia_TestTask/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Synesthesia_TestTask/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -337,6 +473,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		622099A42913B4C700AE72AB /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		622099A52913B4C700AE72AB /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 622099A42913B4C700AE72AB /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6220996B2913A61D00AE72AB /* Project object */;
 }
