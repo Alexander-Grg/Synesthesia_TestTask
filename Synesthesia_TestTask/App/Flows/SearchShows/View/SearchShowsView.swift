@@ -18,6 +18,7 @@ struct SearchShowsView: View {
             ScrollView {
                 TextField("Enter a search request", text: $searchShowsViewModel.searchText)
                     .textFieldStyle(.roundedBorder)
+                    .padding(.horizontal, 10)
                     .textInputAutocapitalization(.never)
                     .onChange(of: searchShowsViewModel.searchText) { _ in
                         searchShowsViewModel.fetchDataFromNetwork(query: searchShowsViewModel.searchText)
