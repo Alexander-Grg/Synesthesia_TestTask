@@ -11,7 +11,6 @@ import Kingfisher
 struct SearchShowsCell: View {
     let title: String
     let image: String
-    let genres: String
     let rating: Double
 
     var body: some View {
@@ -20,10 +19,9 @@ struct SearchShowsCell: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 Text(title)
-                    .font(.headline)
-            Text(genres)
-                .font(.system(size: 14))
-            Text(String(rating))
+                .modifier(HelveticaNeue(size: 22))
+            Text(String("Rating: \(rating.removeZerosFromEnd())"))
+                .modifier(HelveticaNeue(size: 22))
         }
     }
 }
