@@ -8,7 +8,7 @@
 import Foundation
 
 enum SearchShowsEndpoint: EndpointProtocol {
-case getShowsSearch(query: String)
+    case getShowsSearch(query: String)
     
     var absoluteURL: String {
         return baseURL + "/search/shows"

@@ -17,5 +17,5 @@ extension EndpointProtocol {
     var baseURL: String {
         return "https://api.tvmaze.com"
     }
-
+    
 }

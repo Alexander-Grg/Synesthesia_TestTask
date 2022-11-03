@@ -8,7 +8,7 @@
 import Foundation
 
 enum ImagesCollectionEndpoint: EndpointProtocol {
-case getShowsSearch(id: Int)
+    case getShowsSearch(id: Int)
     
     var absoluteURL: String {
         switch self {
@@ -16,7 +16,7 @@ case getShowsSearch(id: Int)
             return baseURL + "/shows/\(id)/images"
         }
     }
-
+    
     var parameters: [String : String] {
         return [:]
     }

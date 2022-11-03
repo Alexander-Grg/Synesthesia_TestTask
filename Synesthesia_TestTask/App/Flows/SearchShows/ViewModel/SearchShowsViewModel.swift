@@ -18,15 +18,15 @@ import Combine
     func fetchDataFromNetwork(query: String) {
         searchShowsService.requestShowsSearch(query: query)
             .decode(type: StartSearch.self, decoder: JSONDecoder())
-              .receive(on: DispatchQueue.main)
-              .sink(receiveCompletion: { error in
-                  print(error)
-              }, receiveValue: { [weak self] value in
-                  guard let self = self else { return }
-                  
-                  self.TVShows = value
-              }
-              )
-              .store(in: &cancellable)
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { error in
+                print(error)
+            }, receiveValue: { [weak self] value in
+                guard let self = self else { return }
+                
+                self.TVShows = value
+            }
+            )
+            .store(in: &cancellable)
     }
 }

@@ -24,16 +24,16 @@ class APIProvider<Endpoint: EndpointProtocol> {
         guard var urlComponents = URLComponents(string: endpoint.absoluteURL) else {
             return nil
         }
-
+        
         urlComponents.queryItems = endpoint.parameters.compactMap({ param -> URLQueryItem in
             return URLQueryItem(name: param.key, value: param.value)
         })
-
+        
         
         guard let url = urlComponents.url else {
             return nil
         }
-
+        
         let urlRequest = URLRequest(url: url,
                                     cachePolicy: .reloadRevalidatingCacheData,
                                     timeoutInterval: 30)
